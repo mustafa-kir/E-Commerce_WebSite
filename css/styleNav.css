@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: white;
+}
+.Analogo{
+    margin: 10% 50%;
+    width: 200px;
+    height: 150px;
+}
+.container1{
+    display: grid;
+    grid-template-columns: 2fr 10fr 1fr;
+}
+.nav2{
+	position: relative;
+	margin: 7% 15%;
+	width: 520px;
+	height: 50px;
+	background: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+.nav2 .navBar-a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+.nav2 .animation{
+	position: absolute;
+	height: 10%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background:rgb(4, 157, 175);
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+.navBar-a:nth-child(1){
+	width: 110px;
+}
+.nav2 .start-home, a:nth-child(1):hover~.animation{
+	width: 110px;
+	left: 5px;
+}
+
+.nav2 .start-product, a:nth-child(2):hover~.animation{
+	width: 125px;
+	left: 130px;
+}
+
+.nav2 .start-about, a:nth-child(3):hover~.animation{
+	width: 125px;
+	left: 273px;
+}
+.nav2 .start-contact, a:nth-child(4):hover~.animation{
+	width: 100px;
+	left: 390px;
+}
+
+
+/*vabar daki ürünlerimiz yazısı genişliği */
+.nav2 a:nth-child(2){
+	width: 170px;
+}
+/* fare imleçi 2 konumdaki imeleci  */
+.nav2 a:nth-child(2):hover~.animation{
+	width: 125px;
+	left: 130px;
+}
+
+.navBar-a:nth-child(3){
+	width: 100px;
+}
+
+.navBar-a:nth-child(3):hover~.animation{
+	width: 110px;
+	left: 273px;
+}
+.navBar-a:nth-child(4){
+	width: 120px;
+}
+.navBar-a:nth-child(4):hover~.animation{
+	width: 100px;
+	left: 390px;
+}
+
+@media(max-width: 767px){
+	.nav2{
+		position: relative;
+		margin: 10% 0.3%;
+		width: 99%;
+		height: 50px;
+		background: #34495e;
+		border-radius: 8px;
+		font-size: 0;
+		box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+	}
+	.navBar-a:nth-child(1){
+		
+		width: 17%;
+	}
+	.nav2 .start-home, a:nth-child(1):hover~.animation{
+		width: 18%;
+		left: 1%;
+	}
+	
+	.nav2 .start-product, a:nth-child(2):hover~.animation{
+		width: 27%;
+		left: 21%;
+	}
+	
+	.nav2 .start-about, a:nth-child(3):hover~.animation{
+		width: 25%;
+		left: 50%;
+	}
+	.nav2 .start-contact, a:nth-child(4):hover~.animation{
+		width: 19%;
+		left: 78%;
+	}
+	
+	
+	/*vabar daki ürünlerimiz yazısı genişliği */
+	.nav2 a:nth-child(2){
+		width: 150px;
+	}
+	/* fare imleçi 2 konumdaki imeleci  */
+	.nav2 a:nth-child(2):hover~.animation{
+		width: 120px;
+		left: 105px;
+	}
+	
+	.navBar-a:nth-child(3){
+		width: 100px;
+	}
+	
+	.navBar-a:nth-child(3):hover~.animation{
+		width: 110px;
+		left: 233px;
+	}
+	.navBar-a:nth-child(4){
+		width: 120px;
+	}
+	.navBar-a:nth-child(4):hover~.animation{
+		width: 100px;
+		left: 350px;
+	}
+  }
+
+  
+  
+  
